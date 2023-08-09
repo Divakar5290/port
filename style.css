@@ -1,21 +1,23 @@
 *{
   scroll-behavior: smooth;
   font-family: "Nunito", sans-serif;
-  padding: 0;
   margin: 0;
   box-sizing: border-box;
   list-style: none;
 }
 
-
 .main{
+  background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+}
+
+/* .main{
   background-image: url('./imgs/img1.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   width: 100%;
   height: 100%;
-}
+} */
 
 
 /* nav animation */
@@ -35,13 +37,6 @@
   scroll-behavior: smooth;
   animation: slide-in 1s;
   
-}
-
-h2{
-  font-size: 20px;
-  background: -webkit-linear-gradient(rgba(250, 192, 0, 0.973), rgb(132, 3, 253));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 /* navbar */
@@ -69,7 +64,7 @@ h2{
 
 .navlist li a {
   text-decoration: none;
-  color: linear-gradient(109.2deg, rgba(254, 3, 87, 0) 9.3%, rgb(112, 3, 255) 89.5%);
+  color: rgb(255, 174, 0);
 }
 
 .navlist li:hover {
@@ -80,20 +75,22 @@ h2{
   .navlist {
     width: 100%;
     height: auto;
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     text-align: center;
     transition: all .5s;
-    border-bottom: 1px solid rgba(255, 217, 0, 0.404);
+    position: fixed;
+    border-bottom: 1px solid rgba(255, 174, 0, 0.589);
   }
   .navlist li a {
-    color: rgba(255, 255, 255, 0.753);
+    color: rgb(221, 221, 221);
   }
 }
 
 
 
 .logo{
-  color:linear-gradient(109.2deg, rgba(254, 3, 87, 0) 9.3%, rgb(112, 3, 255) 89.5%);
   font-weight: bolder;
   font-size: 30px;
   position: fixed;
@@ -165,13 +162,13 @@ h2{
 .pic {
   border: 1px solid rgba(255, 153, 0, 0.795);
   padding: 10px;
-  border-radius: 300px;
+  border-radius: 100%;
   width: 600px;
   height: 600px;
   position: absolute;
   top: 20%;
   right: 10%;
-  box-shadow: 0 0 10px rgba(255, 187, 0, 0.678);
+  box-shadow: 1px 1px 100px 100px rgba(18, 52, 83, 0.479);
 }
 
 
@@ -193,10 +190,10 @@ h2{
      height:100%;
      width:100%;
      padding: 12%;  
-     color: white;
-     font-size: x-large;
+     color: 	rgb(255, 255, 255);
+     font-size: 28px;
      letter-spacing: 1px;
-     word-spacing: 3px;
+     word-spacing: 8px;
      font-style: italic;  
      /* border: 1px solid rgba(255, 187, 0, 0.418);     */
     }
@@ -229,8 +226,10 @@ section ul {
 }
 
 section li {
-  background: linear-gradient(109.2deg, rgba(254, 3, 87, 0) 9.3%, rgb(112, 3, 255) 89.5%);
-  box-shadow: 0 0 0 8px rgba(103, 8, 255, 0.322);
+
+  
+  background: linear-gradient(109.2deg, rgba(254, 3, 87, 0) 9.3%, #0c0d13 100%);
+  box-shadow: 0 0 15px 3px rgb(28, 84, 148);
   font-size: 35px;
   margin: 55px;
   padding: 32px;
@@ -240,7 +239,6 @@ section li {
 
 .card-header {
   text-align: center;
-  background-color: aqua;
 }
 
 /* education */
@@ -267,7 +265,8 @@ section li {
   padding: 50px;
   margin: 20px; 
   background: transparent;
-  box-shadow:  0 0 10px rgba(252, 151, 0, 0.678);
+  border: 1px solid rgba(66, 128, 209, 0.137);
+  box-shadow:  0 0 15px 8px  #0c0d13 ;
 
 }
 
@@ -286,20 +285,18 @@ section li {
 
 }
 
-#contact .social {
-  font-size: xxx-large;
-  padding: 50px;
-}
-
-#contact .social a {
-  padding: 50px;
+.social .btn{
+  font-size: 40px;
+  padding: 0 60px;
   color: rgba(255, 166, 0, 0.664);
-  transition: 1s;
-
+  transition: all .4s;
 }
 
 
-#contact .social a:hover{
+.social .btn:hover{
   color: rgb(255, 166, 0);
-  transform: scale(2);
+  transform: scale(1.3);
+  
 }
+
+
